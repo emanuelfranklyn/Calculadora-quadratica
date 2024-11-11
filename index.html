@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raiz-Calucadora</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+  </head>
+  <body>
+    <section id="equationform" class="box">
+      <div id="themeToggler">
+        <label for="themeSwitch" id="themeSwitchLabel">Tema escuro</label>
+        <input type="checkbox" id="themeSwitch">
+      </div>
+      <h1 class="sectionTitle">Entrada de dados</h1>
+      <div id="formInputs">
+        <input type="number" name="num" id="numA" placeholder="a" step="0.1">
+        <label for="num">x² + </label>
+        <input type="number" name="num" id="numB" placeholder="b" step="1">
+        <label for="num">x +</label>
+        <input type="number" name="num" id="numC" placeholder="c" style="text-align: center;" step="1">
+        <span> = 0</span>
+      </div>
+    </section>
+    <section id="solution" class="box">
+      <h1 class="sectionTitle">Resolução</h1>
+      <div class="explanationSection">
+        <div class="description">
+          <span>1&rpar; Visto que podemos reescrever a equação original como <pre>(x-r)(x-s) = 0</pre> onde r e s são as raizes da equação</span>
+          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 663 182" width="663" height="182" class="svgImage">
+            <style>
+              .s1 { fill: none;stroke: #00ffff;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s2 { fill: none;stroke: #ff00ff;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s3 { fill: none;stroke: #ffff00;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s4 { fill: none;stroke: #ff0000;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s5 { fill: #00ffff } 
+              .s6 { fill: #ff0000 } 
+              .s7 { fill: #ff00ff } 
+              .s8 { fill: #ffff00 } 
+            </style>
+            <path class="svgText" aria-label="(x-r)(x-s)"  d="m179.3 44.6h4.9q-4.1 7-6.1 13.8-2 6.9-2 14 0 7 2 14 2 6.9 6.1 13.8h-4.9q-4.6-7.1-6.9-14.1-2.2-6.9-2.2-13.7 0-6.8 2.2-13.7 2.3-6.9 6.9-14.1zm37.6 13.2h6.6l-12.4 16.6 13 17.6h-6.6l-9.9-13.4-10 13.4h-6.6l13.3-17.9-12.2-16.3h6.6l9.1 12.2zm12.4 19.6v-5h16.4v5zm45.2-20.1v5.7q-0.9-0.5-2-0.8-1.1-0.2-2.5-0.2-4.7 0-7.3 3.1-2.5 3.1-2.5 8.9v18h-5.7v-34.2h5.7v5.3q1.7-3.1 4.6-4.6 2.8-1.5 6.9-1.5 0.5 0 1.2 0.1 0.7 0 1.6 0.2zm5-12.8h4.9q4.6 7.2 6.9 14.1 2.3 6.9 2.3 13.8 0 6.8-2.3 13.7-2.3 6.9-6.9 14.1h-4.9q4.1-7 6.1-13.9 2-6.9 2-13.9 0-7.1-2-14-2-6.8-6.1-13.9zm33.9 0h4.9q-4.1 7.1-6.1 13.9-1.9 6.9-1.9 14 0 7 1.9 13.9 2.1 6.9 6.1 13.9h-4.9q-4.6-7.2-6.8-14.1-2.3-6.9-2.3-13.7 0-6.9 2.3-13.8 2.2-6.9 6.8-14.1zm37.6 13.3h6.6l-12.3 16.6 13 17.6h-6.7l-9.9-13.5-10 13.5h-6.6l13.3-17.9-12.2-16.3h6.7l9 12.2zm12.4 19.5v-5h16.5v5zm47.2-18.5v5.3q-2.4-1.2-5-1.8-2.6-0.7-5.3-0.7-4.2 0-6.3 1.3-2.1 1.3-2.1 3.9 0 1.9 1.5 3.1 1.5 1.1 6 2.1l2 0.4q5.9 1.3 8.5 3.6 2.5 2.3 2.5 6.5 0 4.8-3.8 7.6-3.8 2.7-10.3 2.7-2.8 0-5.8-0.5-2.9-0.5-6.2-1.6v-5.8q3.1 1.6 6.1 2.5 3 0.7 6 0.7 3.9 0 6.1-1.3 2.1-1.4 2.1-3.8 0-2.3-1.5-3.6-1.6-1.2-6.8-2.3l-1.9-0.5q-5.3-1.1-7.6-3.3-2.3-2.3-2.3-6.3 0-4.8 3.4-7.4 3.4-2.7 9.7-2.7 3.1 0 5.9 0.5 2.7 0.5 5.1 1.4zm9.8-14.3h4.9q4.6 7.2 6.9 14.1 2.3 6.9 2.3 13.7 0 6.9-2.3 13.8-2.3 6.9-6.9 14.1h-4.9q4.1-7 6.1-13.9 2-6.9 2-14 0-7-2-13.9-2-6.9-6.1-13.9z"/>
+            <path class="s1" d="m206.5 50.4c0 0 60-52 134.5-2"/>
+            <path class="s2" d="m256.7 95.6c0 0 38 28.4 88-3.6"/>
+            <path class="s3" d="m256.7 95.6c0 0-16.4 38.7 140.6 0.4"/>
+            <path class="s4" d="m206.5 50.4c0 0 31.8-81.4 191.8-1.1"/>
+            <path class="svgText" aria-label="x² + -sx + -rx + -r*-s"  d="m35.7 134.8h6.6l-12.4 16.6 13.1 17.6h-6.7l-9.9-13.4-10 13.4h-6.6l13.3-17.9-12.2-16.3h6.7l9 12.2zm17.5 10.3h13v3.5h-18.3v-3.4q1-0.9 3-2.6 10.5-9.3 10.5-12.2 0-2-1.6-3.2-1.6-1.3-4.2-1.3-1.6 0-3.5 0.6-1.8 0.5-4 1.5v-3.7q2.3-0.9 4.4-1.3 2-0.4 3.7-0.4 4.5 0 7.1 2 2.7 2 2.7 5.3 0 4.2-10.1 12.9-1.7 1.5-2.7 2.3zm60.4-15.3h5.1v17h17v5.2h-17v17h-5.1v-17h-17v-5.2h17zm51.7 24.6v-5h16.4v5zm47.2-18.6v5.3q-2.3-1.2-4.9-1.8-2.6-0.6-5.3-0.6-4.2 0-6.3 1.3-2.1 1.2-2.1 3.8 0 2 1.5 3.1 1.5 1.1 6 2.1l1.9 0.4q6 1.3 8.5 3.6 2.6 2.4 2.6 6.6 0 4.7-3.8 7.5-3.8 2.8-10.4 2.8-2.7 0-5.7-0.5-3-0.6-6.3-1.7v-5.8q3.1 1.7 6.2 2.5 3 0.8 6 0.8 3.9 0 6.1-1.4 2.1-1.3 2.1-3.8 0-2.3-1.6-3.5-1.5-1.3-6.7-2.4l-2-0.4q-5.2-1.1-7.5-3.4-2.3-2.3-2.3-6.3 0-4.8 3.4-7.4 3.4-2.6 9.7-2.6 3.1 0 5.9 0.4 2.7 0.5 5 1.4zm32.6-1h6.6l-12.3 16.6 13 17.6h-6.7l-9.9-13.4-10 13.4h-6.6l13.3-17.9-12.2-16.3h6.7l9 12.2zm52.9-5h5.1v17h17v5.2h-17v17h-5.1v-17h-17.1v-5.2h17.1zm51.6 24.5v-5h16.5v5zm45.2-20v5.7q-0.9-0.5-2.1-0.8-1.1-0.2-2.4-0.2-4.8 0-7.3 3.1-2.6 3.1-2.6 8.9v18h-5.6v-34.2h5.6v5.3q1.8-3.1 4.6-4.6 2.9-1.5 6.9-1.5 0.6 0 1.3 0 0.7 0.1 1.6 0.3zm26 0.5h6.6l-12.3 16.6 13 17.6h-6.6l-10-13.5-10 13.5h-6.6l13.3-17.9-12.1-16.3h6.6l9 12.2zm52.9-5h5.1v17h17v5.1h-17v17.1h-5.1v-17.1h-17v-5.1h17zm51.6 24.5v-5h16.5v5zm45.2-20.1v5.8q-0.9-0.5-2.1-0.8-1.1-0.3-2.4-0.3-4.8 0-7.3 3.2-2.6 3-2.6 8.8v18.1h-5.6v-34.2h5.6v5.3q1.8-3.1 4.6-4.6 2.9-1.6 6.9-1.6 0.6 0 1.3 0.1 0.7 0.1 1.6 0.2zm27.6-6.3l1.8 3-11 5.9 11 6-1.8 3-10.2-6.2v11.5h-3.5v-11.5l-10.3 6.2-1.7-3 10.9-6-10.9-5.9 1.7-3 10.3 6.2v-11.5h3.5v11.5zm6.7 26.4v-5h16.4v5zm47.2-18.5v5.3q-2.4-1.2-4.9-1.9-2.6-0.6-5.3-0.6-4.2 0-6.3 1.3-2.1 1.3-2.1 3.9 0 1.9 1.5 3 1.5 1.1 6 2.2l1.9 0.4q6 1.3 8.5 3.6 2.5 2.3 2.5 6.5 0 4.8-3.7 7.6-3.8 2.7-10.4 2.7-2.7 0-5.7-0.5-3-0.5-6.3-1.6v-5.8q3.1 1.6 6.2 2.4 3 0.8 5.9 0.8 4 0 6.1-1.3 2.2-1.4 2.2-3.9 0-2.2-1.6-3.5-1.5-1.2-6.7-2.3l-2-0.5q-5.2-1.1-7.5-3.3-2.3-2.3-2.3-6.3 0-4.8 3.4-7.4 3.4-2.7 9.7-2.7 3.1 0 5.8 0.5 2.8 0.5 5.1 1.4z"/>
+            <path class="s5" d="m8 172h56v5h-56z"/>
+            <path class="s6" d="m175 172h73v5h-73z"/>
+            <path class="s7" d="m355 172h73v5h-73z"/>
+            <path class="s8" d="m528 172h129v5h-129z"/>
+          </svg>
+          <span>Aplicando a regra dos sinais</span>
+          <pre>x² - sx - rx + rs</pre>
+          <div class='infoBox'>
+            <span class='boxTitle'>Nota:</span>
+            <span><pre>-r &middot; -s</pre> pode ser visto como <pre>-1&middot;r &middot; -1&middot;s</pre> ou <pre>-1&middot;-1 &middot; r&middot;s</pre> que é <pre>1&middot;rs</pre> ou somente <pre>rs</pre></span>
+          </div>
+          <span>Podemos isolar o <pre>x</pre> nos termos do meio <pre>-sx -rx</pre> e ficamos com <pre>-&lpar;s + r&rpar;x</pre>.</span>
+          <span>A equação final fica então <pre>ax² -&lpar;r + s&rpar;x + rs = 0</pre> ou <pre>ax² + bx + c = 0</pre> onde <pre>b</pre> é igual a <pre>-&lpar;r + s&rpar;</pre> e <pre>c</pre> é <pre>rs</pre>.</span>
+        </div>
+      </div>
+      <div class="explanationSection">
+        <div class="description">
+          <span>2&rpar; Para facilitar as operações, dividimos todos os fatores por a, assim deixando o <pre>x²</pre> isolado.</span>
+        </div>
+        <div class="inOperation">
+          <pre>b' = <reTe value="b">b</reTe>/<reTe value="a">a</reTe> = <reTe value="b1">b'</reTe></pre>
+          <pre>c' = <reTe value="c">c</reTe>/<reTe value="a">a</reTe> = <reTe value="c1">c'</reTe></pre>
+          <pre>x² <reTe value="sigb1">+ </reTe><reTe value="b1">b'</reTe>x <reTe value="sigc1">+ </reTe<reTe value="c1">c'</reTe> = 0</pre>
+        </div> 
+        <div class="formula">
+          <pre>b' = b/a</pre>
+          <pre>c' = c/a</pre>
+          <pre>x² + b'x + c' = 0</pre>
+        </div> 
+      </div>
+      <div class="explanationSection">
+        <div class="description">
+          <span>3&rpar; Para facilitar o entendimento podemos pensar nos valores de <pre>r</pre> e <pre>s</pre> &lpar;as raizes da equação&rpar; como a distância &lpar;<pre>d</pre>&rpar; entre o ponto médio &lpar;<pre>m</pre>&rpar; da parábola &lpar;veja o grafíco ao lado&rpar;.</span>
+          <span>Vamos então definir os valores de <pre>r</pre> e <pre>s</pre> como <pre>r = m - d &lpar;r = média - distancia&rpar;</pre> e <pre>s = m + d</pre>.</span>
+        </div>
+      </div>
+      <div class="explanationSection">
+        <div class="description">
+          <span>4&rpar; Isso significa que <pre>m</pre> vai ser a média dos valores de <pre>r</pre> e <pre>s</pre> e isso nós informarar o ponto no exato meio da parabola.</span>
+          <pre class='centerContent'>m =<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 118" width="156" height="118" class="svgImage">
+            <path class="svgText" aria-label="2"  d="m72 106.8h21.5v5.2h-28.9v-5.2q3.5-3.6 9.5-9.7 6.1-6.2 7.7-7.9 2.9-3.4 4.1-5.7 1.2-2.3 1.2-4.5 0-3.6-2.6-5.9-2.5-2.3-6.6-2.3-2.9 0-6.1 1-3.3 1-6.9 3v-6.2q3.7-1.5 6.9-2.2 3.3-0.8 6-0.8 7 0 11.3 3.5 4.2 3.6 4.2 9.5 0 2.8-1.1 5.3-1 2.5-3.8 6-0.8 0.9-4.9 5.1-4.1 4.2-11.5 11.8z"/>
+            <path class="svgText" aria-label="r + s"  d="m27.5 8.3v5.8q-0.9-0.6-2.1-0.8-1.1-0.3-2.4-0.3-4.8 0-7.3 3.1-2.6 3.1-2.6 8.9v18h-5.6v-34.2h5.6v5.3q1.8-3.1 4.6-4.6 2.9-1.5 6.9-1.5 0.6 0 1.3 0.1 0.7 0 1.6 0.2zm43.5-4.5h5.1v17h17v5.2h-17v17h-5.1v-17h-17v-5.2h17zm76.3 6v5.3q-2.4-1.2-4.9-1.8-2.6-0.6-5.3-0.6-4.2 0-6.3 1.3-2.1 1.3-2.1 3.8 0 2 1.5 3.1 1.5 1.1 6 2.1l1.9 0.4q6 1.3 8.5 3.7 2.6 2.3 2.6 6.5 0 4.7-3.8 7.5-3.8 2.8-10.4 2.8-2.7 0-5.7-0.5-3-0.6-6.3-1.6v-5.8q3.1 1.6 6.2 2.4 3 0.8 5.9 0.8 4 0 6.1-1.4 2.2-1.3 2.2-3.8 0-2.3-1.6-3.5-1.5-1.2-6.7-2.4l-2-0.4q-5.2-1.1-7.5-3.4-2.3-2.3-2.3-6.2 0-4.9 3.4-7.5 3.4-2.6 9.7-2.6 3.1 0 5.9 0.4 2.7 0.5 5 1.4z"/>
+            <path class="svgText" d="m6 50h143v6h-143z"/>
+          </svg></pre>
+          <span>Como vimos na étapa <pre>1</pre> podemos representar o valor de <pre>b'</pre> como <pre>-&lpar;r+s&rpar;</pre> isso significa que podemos substituir na fórmula <pre>r + s</pre> por <pre>b'</pre></span>
+          </div>
+          <div class="inOperation">
+            <pre class='centerContent'>m =<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 126" width="78" height="126">
+              <text style="transform: matrix(1,0,0,1,25,110)"><tspan x="0" y="0" class="step3Svgs svgText">2</tspan></text>
+              <text style="transform: matrix(1,0,0,1,40,51)"><tspan x="-39.7" y="0" class="step3Svgs svgText"><tspan value="Ib1">-b'</tspan></tspan></text>
+              <path class="svgText" d="m7 58h69v6h-69z"/>
+            </svg> = <reTe value="m">m</reTe></pre>
+          </div> 
+          <div class="formula">
+            <pre class='centerContent'>m =<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 126" width="78" height="126">
+              <text style="transform: matrix(1,0,0,1,25,110)"><tspan x="0" y="0" class="step3Svgs svgText">2</tspan></text>
+              <text style="transform: matrix(1,0,0,1,40,51)"><tspan x="-39.7" y="0" class="step3Svgs svgText">-b'</tspan></text>
+              <path class="svgText" d="m7 58h69v6h-69z"/>
+            </svg></pre>
+          </div> 
+          <div class="description">
+            <div class='infoBox'>
+              <span class='boxTitle'>Nota:</span>
+              <span>Perceba que invertemos o valor de <pre>b'</pre> para remover o sinal negativo <pre>-</pre> do valor <pre>-(r+s)</pre>.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="explanationSection">
+        <div class="description">
+          <span>4&rpar; Lembra da etápa 1 onde determinamos que o valor de <pre>c</pre> era <pre>rs</pre>, então <pre>c'</pre> pode ser representado como:</span>
+        </div>
+        <div class="inOperation">
+          <pre>c' = &lpar;<reTe value="m">m</reTe> - d&rpar;&middot;&lpar;<reTe value="m">m</reTe> + d&rpar;</pre>
+        </div> 
+        <div class="formula">
+          <pre>c' = &lpar;m - d&rpar;&middot;&lpar;m + d&rpar;</pre>
+        </div>
+        <div class="description">
+          <span>Vamos extender essa multiplicação como fizemos na etápa 1.</span>
+          <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 663 182" width="663" height="182" class="svgImage">
+            <style>
+              .s0 { fill: none;stroke: #00ffff;stroke-miterlimit:100;stroke-width: 3.6 }
+              .s2 { fill: none;stroke: #ff00ff;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s3 { fill: none;stroke: #ffff00;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s4 { fill: none;stroke: #ff0000;stroke-miterlimit:100;stroke-width: 3.6 } 
+              .s5 { fill: #00ffff } 
+              .s6 { fill: #ff0000 } 
+              .s7 { fill: #ff00ff } 
+              .s8 { fill: #ffff00 } 
+            </style>
+            <path fill-rule="evenodd" class="s0" d="m213.4 49.6c0 0 69.9-60.7 156.8-2.4"/>
+            <path class="svgText" aria-label="(m-d)(m+d)"  d="m180.1 46.5h4.3q-3.6 6.1-5.3 12.1-1.7 6-1.7 12.2 0 6.2 1.7 12.3 1.8 6 5.3 12.1h-4.3q-4-6.3-6-12.3-2-6.1-2-12.1 0-6 2-12 2-6 6-12.3zm37.2 17.3q1.8-3.3 4.4-4.9 2.5-1.6 6-1.6 4.7 0 7.2 3.3 2.6 3.3 2.6 9.3v18.1h-5v-17.9q0-4.3-1.5-6.4-1.5-2.1-4.6-2.1-3.9 0-6.1 2.6-2.2 2.5-2.2 6.9v16.9h-4.9v-17.9q0-4.3-1.6-6.4-1.5-2.1-4.7-2.1-3.7 0-6 2.6-2.2 2.5-2.2 6.9v16.9h-4.9v-29.9h4.9v4.6q1.7-2.7 4.1-4.1 2.3-1.3 5.5-1.3 3.3 0 5.6 1.7 2.3 1.7 3.4 4.8zm27.5 11.4v-4.4h14.4v4.4zm42-12.6v-16.2h4.9v41.6h-4.9v-4.5q-1.6 2.7-4 4-2.3 1.3-5.6 1.3-5.5 0-8.9-4.4-3.4-4.3-3.4-11.3 0-7.1 3.4-11.4 3.4-4.4 8.9-4.4 3.3 0 5.6 1.3 2.4 1.3 4 4zm-16.8 10.5q0 5.4 2.2 8.5 2.3 3.1 6.2 3.1 3.9 0 6.1-3.1 2.3-3.1 2.3-8.5 0-5.5-2.3-8.5-2.2-3.1-6.1-3.1-3.9 0-6.2 3.1-2.2 3-2.2 8.5zm31-26.6h4.3q4 6.3 6 12.3 2 6 2 12 0 6-2 12.1-2 6-6 12.3h-4.3q3.6-6.1 5.3-12.1 1.8-6.1 1.8-12.3 0-6.2-1.8-12.2-1.7-6-5.3-12.1zm29.7 0h4.3q-3.6 6.1-5.3 12.1-1.8 6-1.8 12.2 0 6.2 1.8 12.3 1.7 6 5.3 12.1h-4.3q-4-6.3-6-12.3-2-6.1-2-12.1 0-6 2-12 2-6 6-12.3zm37.1 17.3q1.9-3.3 4.5-4.9 2.5-1.6 6-1.6 4.7 0 7.2 3.3 2.5 3.3 2.5 9.3v18.1h-4.9v-17.9q0-4.3-1.5-6.4-1.5-2.1-4.7-2.1-3.8 0-6 2.6-2.2 2.5-2.2 6.9v16.9h-5v-17.9q0-4.3-1.5-6.4-1.5-2.1-4.7-2.1-3.8 0-6 2.6-2.2 2.5-2.2 6.9v16.9h-5v-29.9h5v4.6q1.7-2.7 4-4.1 2.4-1.3 5.6-1.3 3.3 0 5.5 1.7 2.3 1.7 3.4 4.8zm45.6-10.1h4.5v14.9h14.9v4.5h-14.9v14.9h-4.5v-14.9h-14.9v-4.5h14.9zm50 8.9v-16.2h5v41.6h-5v-4.5q-1.5 2.7-3.9 4-2.3 1.3-5.7 1.3-5.4 0-8.8-4.4-3.4-4.3-3.4-11.4 0-7 3.4-11.3 3.4-4.4 8.8-4.4 3.4 0 5.7 1.3 2.4 1.3 3.9 4zm-16.7 10.4q0 5.5 2.2 8.6 2.2 3 6.1 3 3.9 0 6.2-3 2.2-3.1 2.2-8.6 0-5.4-2.2-8.5-2.3-3.1-6.2-3.1-3.9 0-6.1 3.1-2.2 3.1-2.2 8.5zm31-26.6h4.3q4 6.4 6 12.4 2 6 2 12 0 6-2 12.1-2 6-6 12.3h-4.3q3.6-6.1 5.3-12.2 1.8-6 1.8-12.2 0-6.2-1.8-12.2-1.7-6-5.3-12.2z"/>
+            <path fill-rule="evenodd" class="s2" d="m273.1 94.1c0 0 44.3 33.1 102.6-4.2"/>
+            <path fill-rule="evenodd" class="s3" d="m274.3 92.9c0 0-19.2 45.2 163.9 0.5"/>
+            <path fill-rule="evenodd" class="s4" d="m213.4 49.6c0 0 37.1-94.9 223.6-1.3"/>
+            <path class="s5" d="m8 172h56v5h-56z"/>
+            <path class="s6" d="m317 172v5h-102v-5z"/>
+            <path class="s7" d="m507 172v5h-108v-5z"/>
+            <path class="s8" d="m657 172v5h-75v-5z"/>
+            <path class="svgText" aria-label="m² + dm - dm - d²"  d="m39.4 131.1q2.4-4.3 5.8-6.4 3.4-2.1 7.9-2.1 6.2 0 9.5 4.3 3.4 4.3 3.4 12.3v23.8h-6.5v-23.6q0-5.7-2-8.4-2-2.8-6.2-2.8-5 0-7.9 3.4-2.9 3.3-2.9 9.1v22.3h-6.6v-23.6q0-5.7-2-8.4-2-2.8-6.2-2.8-4.9 0-7.9 3.4-2.9 3.4-2.9 9.1v22.3h-6.5v-39.4h6.5v6.1q2.2-3.6 5.3-5.4 3.1-1.7 7.4-1.7 4.3 0 7.3 2.2 3 2.2 4.5 6.3zm42.2 4.4h14.9v4h-21.1v-3.9q1.2-1.1 3.4-3.1 12.2-10.7 12.2-14 0-2.3-1.9-3.8-1.8-1.4-4.8-1.4-1.8 0-4 0.6-2.1 0.6-4.7 1.9v-4.4q2.8-0.9 5.1-1.4 2.3-0.5 4.3-0.5 5.2 0 8.2 2.3 3.1 2.3 3.1 6.1 0 4.9-11.7 14.9-2 1.7-3 2.7zm69.6-17.7h5.9v19.6h19.7v6h-19.7v19.6h-5.9v-19.6h-19.6v-6h19.6zm88.9 11.8v-21.4h6.5v54.8h-6.5v-5.9q-2.1 3.5-5.2 5.2-3.1 1.7-7.5 1.7-7.1 0-11.6-5.7-4.5-5.7-4.5-15 0-9.3 4.5-15 4.5-5.7 11.6-5.7 4.4 0 7.5 1.7 3.1 1.7 5.2 5.3zm-22.1 13.7q0 7.2 2.9 11.3 3 4 8.1 4 5.2 0 8.1-4 3-4.1 3-11.3 0-7.1-3-11.2-2.9-4.1-8.1-4.1-5.1 0-8.1 4.1-2.9 4.1-2.9 11.2zm72.6-12.2q2.5-4.3 5.8-6.4 3.4-2.1 8-2.1 6.2 0 9.5 4.4 3.3 4.2 3.3 12.2v23.8h-6.5v-23.6q0-5.7-2-8.4-2-2.7-6.1-2.7-5 0-8 3.3-2.9 3.3-2.9 9.1v22.3h-6.5v-23.6q0-5.7-2-8.4-2-2.7-6.2-2.7-5 0-7.9 3.3-2.9 3.4-2.9 9.1v22.3h-6.5v-39.4h6.5v6.1q2.2-3.6 5.3-5.4 3.1-1.7 7.4-1.7 4.3 0 7.2 2.2 3.1 2.2 4.5 6.3zm59.2 15v-5.7h19v5.7zm78.2-16.5v-21.4h6.5v54.8h-6.5v-5.9q-2 3.5-5.2 5.2-3.1 1.7-7.4 1.7-7.2 0-11.7-5.7-4.5-5.7-4.5-15 0-9.3 4.5-15 4.5-5.7 11.7-5.7 4.3 0 7.4 1.7 3.2 1.7 5.2 5.3zm-22.1 13.7q0 7.2 2.9 11.3 3 4 8.1 4 5.2 0 8.1-4 3-4.1 3-11.3 0-7.1-3-11.2-2.9-4.1-8.1-4.1-5.1 0-8.1 4.1-2.9 4.1-2.9 11.2zm72.6-12.2q2.5-4.3 5.8-6.4 3.4-2.1 8-2.1 6.2 0 9.5 4.4 3.4 4.2 3.4 12.2v23.8h-6.6v-23.6q0-5.7-2-8.4-2-2.7-6.1-2.7-5 0-7.9 3.3-3 3.3-3 9.1v22.3h-6.5v-23.6q0-5.7-2-8.4-2-2.7-6.2-2.7-5 0-7.9 3.3-2.9 3.4-2.9 9.1v22.3h-6.5v-39.4h6.5v6.1q2.2-3.6 5.3-5.4 3.1-1.7 7.4-1.7 4.3 0 7.3 2.2 3 2.2 4.4 6.3zm59.2 15v-5.7h19v5.7zm78.2-16.5v-21.4h6.5v54.8h-6.5v-5.9q-2 3.5-5.2 5.2-3.1 1.7-7.4 1.7-7.2 0-11.7-5.7-4.5-5.7-4.5-15 0-9.3 4.5-15 4.5-5.7 11.7-5.7 4.3 0 7.4 1.7 3.2 1.7 5.2 5.3zm-22.1 13.7q0 7.2 3 11.3 2.9 4 8.1 4 5.1 0 8.1-4 2.9-4.1 2.9-11.3 0-7.1-2.9-11.2-3-4.1-8.1-4.1-5.2 0-8.1 4.1-3 4.1-3 11.2zm44.6-7.8h14.9v4h-21v-3.9q1.2-1.1 3.4-3 12.1-10.8 12.1-14.1 0-2.3-1.8-3.7-1.9-1.5-4.9-1.5-1.8 0-3.9 0.7-2.2 0.6-4.7 1.8v-4.3q2.7-1 5-1.5 2.4-0.5 4.4-0.5 5.1 0 8.1 2.3 3.1 2.3 3.1 6.1 0 4.9-11.7 14.9-1.9 1.7-3 2.7z"/>
+          </svg>
+          <div class='infoBox'>
+            <span class='boxTitle'>Nota:</span>
+            <span>Perceba que <pre>dm</pre> se anula na formula uma vez que seu valor aparece positivo e negativo, isso significa que podemos remove-lo da equação.</span>
+          </div>
+          <span>A equação fica então:</span>
+        </div>
+        <div class="inOperation">
+          <pre><reTe value="c1">c'</reTe> = <reTe value="msq">m²</reTe> - d²</pre>
+        </div> 
+        <div class="formula">
+          <pre>c' = m² - d²</pre>
+        </div>
+      </div>
+      <div class="explanationSection">
+        <div class="description">
+          <span>5&rpar; Vamos isolar o valor de d² na fórmula acima para podermos calcular seu valor.</span>
+        </div>
+        <div class="inOperation">
+          <pre>d² = <reTe value="msq">m²</reTe> - <reTe value="c1">c'</reTe> = <reTe value="dsq">d²</reTe></pre>
+        </div> 
+        <div class="formula">
+          <pre>d² = m² - c'</pre>
+        </div>
+        <div class="description">
+          <span>Podemos agora determinar o valor de <pre>d</pre> e consequentemente os valores de <pre>r</pre> e <pre>s</pre></span>
+        </div>
+        <div class="inOperation">
+          <pre>d = √<reTe value="dsq">d²</reTe> = <reTe value="d">d</reTe></pre>
+          <pre>r = <reTe value="m">m</reTe> - <reTe value="dSym">d</reTe> = <reTe value="r">r</reTe></pre>
+          <pre>s = <reTe value="m">m</reTe> + <reTe value="dSym">d</reTe> = <reTe value="s">s</reTe></pre>
+        </div> 
+        <div class="formula">
+          <pre>d = √d²</pre>
+          <pre>r = m - d</pre>
+          <pre>s = m + d</pre>
+        </div>
+        <div class="description">
+          <pre class='centerContent'>S = <reTe value="solutionString">&lbrace; x &isin; &#8477; | x = r, x = s &rbrace;</reTe></pre>
+        </div>
+      </div>
+    </section>
+    <section id="graph" class="box">
+      <h1 class="sectionTitle">Gráfico</h1>
+      <div id="canvasContainer">
+        <canvas id="equationGraph"></canvas>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js" defer></script>
+</html>
